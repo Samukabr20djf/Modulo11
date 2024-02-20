@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(77, 38, 232, 0.983);
+    padding: 8px;
+    color: #fff;
+}
+
+header li {
+    list-style: none;
+    padding:16px;
+    float: left;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobrealoja {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.sobrealoja img {
+    max-width: 100%;
+    padding-top: 32px;
+}
+
+.texto h2 {
+    border-bottom: 2px solid blue;
+}
+
+.texto p {
+    padding: 16px;
+}
+
+.texto {
+    padding: 32px;
+    max-width: 100%;
+    font-size: 1.3em;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+}
+
+.calçados h2 {
+    border-bottom: 2px solid blue;
+    padding: 16px;
+}
+
+.sapato {
+    padding: 16px;
+}
+
+.sapato button {
+    background-color: rgb(4, 169, 4);
+    border: 1px solid green;
+    color: #fff;
+    padding: 4px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+        max-width: 640px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .sobrealoja img {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .texto p {
+        padding: 16px;
+    }
+    
+    .texto {
+        padding: 8px;
+        max-width: 100%;
+        font-size: 1.4em;
+        font-weight: bolder;
+    }
+
+    .sapato {
+        max-width: 100%;
+        padding-top: 16px;
+    }
+
+    .sapato p {
+        padding-bottom: 8px;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+
+    .container {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .sobrealoja img {
+        max-width: 100%;
+        padding: 8px;
+    }
+
+    .texto p {
+        padding: 16px;
+        max-width: 90%;
+    }
+    
+    .texto {
+        padding: 8px;
+        max-width: 100%;
+        font-size: 1.4em;
+        font-weight: bolder;
+    }
+
+    .sapato {
+        padding-top: 16px;
+    }
+
+    .sapato p {
+        max-width: 80%;
+        padding-bottom: 8px;
+    }
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
